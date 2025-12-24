@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+           /*
+
+            fn with parameter syntax
+           fucntion fn name (para1 ,para2){
+          block of statement
+               }
+       --- pass the arguements as
+           fn name ("arg1", "arg2");
+        ---  if the arguement is not passs the value will be undefined
+        ----  we can even pass arg in the fn declaration as
+          fn name (para1=arg1 ,para2=arg2 )
+      */
+
+           function addname(fname, lname) {
+             document.write("heloo" + " "+ lname + fname);
+           }
+           addname("dhiraj","kewat")
+
+       function addnamee(fname="tiger" , lname="lion") {
+             document.write("heloo" + " "+ lname + fname);
+           }
+           addnamee("dhirajj","kkewat") // this will overide the declartion one output willb e
+
+           document.write("<br>")
+sum(678,89)
+
+    function sum(a,b){
+        document.write(a+b)
+    }
+    sum(10,15)
+    </script>
+  </head>
+  <body></body>
+</html>

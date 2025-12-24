@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /*
+syntax
+function fnname (para1,para2){s
+    statements 
+    return value 
+}
+var a=fnname (arg1,arg2)
+        
+        */
+      function fullname(fname = "hsgv", lname = "cat") {
+        var a = fname + "-" + lname;
+        return a;
+      }
+      var fn = fullname("dhiraj", "kewat");
+      document.write(fn);
+      document.write("<br>");
+
+      function totalmarks(math, eng, sci) {
+        var a = math + eng + sci;
+        return a;
+      }
+
+      function percent(tt) {
+        var per = (tt / 300) * 100;
+        document.write(per);
+      }
+      var total = totalmarks(45, 90, 68);
+      percent(total);
+    </script>
+  </head>
+  <body></body>
+</html>
