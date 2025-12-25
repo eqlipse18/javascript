@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // slice (start, end) means cut the array
+      //  ---> start is start of the index of the array whereas //
+      // ------------>end  is basically the index of arrays if the index is 3 then include upto index 3 but not index 3
+
+      var a = ["babau", "alex", "tony", "rahaul"];
+      document.write(a + "<br>");
+      var b = a.slice(1, 4); // this will cut the array from the index 1 to index 3 not included the index 4
+      // if a.slice(2) ---> starting from index 2 to ending
+      // if a.slice(-2) ---> this will count the array from the last as reverse indexing heer index[-1]=rahaul to till end in reverse order
+      document.write(b);
+
+      //splice fn ---> inserts new elements in the same existing array  with new indexes it  doesnot create new arrays
+      // syntxa ---> splice (index,howmany,"new value")
+      // index --> from which index inserting of new elemenst shoould start
+      //how many -->basically deletes the index if we dont want to delete if dont want to dlt it we can pass 0 there so the element will pushed to next index
+      // new value ---> new element values to  insert the array  // herer a exmample --->
+      var b = ["sony", "alex", "tony", "rahaul"];
+      b.splice(2, 0, "me", "you"); // here
+      // 2---> two new value added
+      // 0 ---> no values deleted after new elements if it was 1 the one elment dlted after new elemenst and if 2 = two elements dlted after new elemnts see the output [alex,tony,rahaulsony,alex,me,you ] old 2 elements deleeted due to new values
+      // -2, -1 ---> we can even pass neg index as reverse indexing
+      // if you want to just dlt  vlaues but not to add new values the pass splice as  b.splice(2,2); two values deleted
+
+      document.write(b);
+    </script>
+  </head>
+  <body></body>
+</html>

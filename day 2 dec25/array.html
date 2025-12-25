@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var ary = [1, 2, 3, 3];
+      document.write(ary); //if you wnat to only one particular index then pass ary as (ary[indexno.])-->(ary[2 or 3]) index  start form 0
+      document.write(ary[4]);
+      document.write("<br>");
+      var sum = 0;
+      var arry = [50, 40, 30, 20, 10];
+      document.write("<ul>");
+      for (a = 1; a <= 4; a++) {
+        document.write("<li>" + arry[a] + "</li>");
+        sum = sum + arry[a];
+      }
+      document.write("</ul>");
+      document.write("total sum = " + sum);
+
+      var arry = [50, "harry", "dhiru", true, "henxom"];
+      document.write("<ul>");
+      for (a = 1; a <= 4; a++) {
+        document.write("<li>" + arry[a] + "</li>");
+      }
+      document.write("</ul>");
+    </script>
+  </head>
+  <body></body>
+</html>

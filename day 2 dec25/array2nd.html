@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var ary = new Array(); // we can add to this later using its variable ary
+      ary[0] = 10;
+      ary[1] = 20;
+      ary[3] = 30; // here value for index is not assigned so it gives indeifined output
+      ary[4] = 40; // if the array loop was 5 than also it 5th index undefined
+
+      for (var g = 0; g <= 5; g++) {
+        ary[g] = prompt("enter your number");
+      }
+      for (a = 0; a <= 4; a++) {
+        document.write(ary[a]);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

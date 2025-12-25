@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //indexOf
+      //indeOf --> used to search item in an array
+      // syntax --> indexOf("Search Item", start) --->
+      // search item --> item to seacrh in array
+      // start ---> pass the index from which index the searching should start as indexOf("ram", 2)--->
+      // ram wil be searched from index 2
+      var a = ["aman", "rahul", "simran", "lebeta"];
+      document.write(a + "<br><b>");
+      var b = a.indexOf("rahul");
+      document.write("<br><b>");
+      document.write(b); // this will give the index of searched item here  rahul is at index [1]
+      // if the  serched item is not present in the array than it will give [-1]
+
+      // lastindexOf ---> same as indexOf but it starts searching from last of array
+      var c = ["aman", "rahul", "simran", "lebeta"];
+      var d = c.lastIndexOf("rahul");
+      document.write("<br><b>");
+      document.write(d);
+    </script>
+  </head>
+  <body></body>
+</html>

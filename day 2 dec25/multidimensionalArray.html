@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // synatx of multidimensional array ----- comma is not needed at last element
+      var ary = [
+        ["manish", "18", "male", "bteceh"], //--- index are as ary[0][0]=manish ary[0][1]=18 and same for all
+        ["golu", "12", "male", "eceh"],
+        ["mash", "15", "female", "teeh"],
+        ["anish", "19", "male", "bcom"],
+      ];
+      //   for (var a = 0; a <= 4; a++) {
+      //     for (var b = 0; b <= 4; b++) {
+      //       document.write(ary[a][b] + " ");
+      //     }
+      //     document.write("<br>");
+      //   } to print this all in tabel watch this -->
+
+      document.write("<table border='1px' cellspacing='0'>");
+      for (var a = 0; a <= 4; a++) {
+        // if we dont the array lenght use inbuilt fn of arry.lenght heer is example
+        document.write(ary.length); // it sunder loop so its giving lenght 4 times
+
+        document.write("<tr>");
+        for (var b = 0; b < 4; b++) {
+          document.write("<td>" + ary[a][b] + "</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+    </script>
+  </head>
+  <body></body>
+</html>
